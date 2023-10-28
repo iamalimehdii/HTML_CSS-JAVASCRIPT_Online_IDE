@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor for HTML, CSS, and JavaScript</title>
+    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <header><h1>Code Editor📝</h1></header>
+<div class="editor">
+    <div class="left">
+
+        <label><i class="ri-html5-fill"></i>HTML</i></label>
+        <textarea onkeyup="run()" id="html-code" spellcheck="false"></textarea>
+
+        <label><i class="ri-css3-fill"></i>CSS</label>
+        <textarea onkeyup="run()" id="css-code" spellcheck="false"></textarea>
+
+        <label><i class="ri-javascript-fill"></i>Javascript</label>
+        <textarea onkeyup="run()" id="js-code" spellcheck="false" ></textarea>
+    </div>
+        <div class="right">
+            <button id="button" type="submit" name="button">
+                <i class="ri-play-fill"></i> Run
+              </button>
+
+            <iframe id="output"></iframe>
+
+        </div>
+
+</div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+<footer> <h2>Copyright © 2023 Designed by Ali Mehdi 🙌 </h2></footer>
+</html>
